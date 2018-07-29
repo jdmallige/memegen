@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/assets/materialize.min.css">
+    <title>MAY MAY generator</title>
+    <style>
+    .nav-wrapper{margin:0;padding:0;border-radius: 15px;}
+    </style>
+</head>
+<body>
+    <div class="container s12">
+        <div class="nav-wrapper light-green">
+            <div class="nav-content ">
+                <h3 class="brand-logo  center-align">
+                        MAY MAY GEN
+                </h3>
+            </div>
+        </div>
+    
+    <div class="container" >
+        <h3>Upload image from the computer</h3>
+    <div class="row">
+        <section>
+        <form class="col s12"method="POST" action="/upload" enctype="multipart/form-data">
+           <div class="input-field">
+            <div class="file-path-wrapper">
+                    
+                <input required="required" class="file-field validate" type="file" name="meme" id="file">
+                    <label for="meme">Jpeg file</label>
+            </div>  
+        </div>
+            
+            <div class="input-field">
+            <input required="required" type="text" name="top" id="top">
+            <label for="top">Top text</label>
+            </div>
+            <div class="input-field">
+                    <input equired="required" type="text" name="bottom" id="down">
+                    <label for="bottom">Bottom text</label>
+                    </div>
+            
+            
+                   <div class="input-field">
+            <button class="btn-large waves-effect orange" onclick="return func()">Create</button>
+                    </div>
+
+        </form>
+    </section>
+    </div>
+    </div>
+</div>
+</body>
+<script src="assets/materialize.min.js">
+function func(){
+    var t=document.getElementById('file');
+   console.log(t.value);
+
+    
+}
+
+</script>
+</html>
