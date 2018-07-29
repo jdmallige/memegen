@@ -18,7 +18,7 @@ var storage = multer.diskStorage({
 
 var upload = multer({ storage : storage }).single('meme');
 
-var server=app.listen(3000);
+var server=app.listen(process.env.PORT||3000);
 app.set('view engine','ejs');
 app.use('/assets', express.static(path.join(__dirname, 'assets')));
 app.use(bodyPaser.urlencoded({extended:true}));
