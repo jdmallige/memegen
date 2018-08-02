@@ -40,7 +40,15 @@ app.post('/upload',function(req,res,next){
         });
         
 		
-	 });
+     });
+     
+    app.get('/maymays',function(req,res){
+
+        res.render('maymays',{});
+
+
+        
+    });
     
         
     
